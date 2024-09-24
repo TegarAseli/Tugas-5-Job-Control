@@ -83,6 +83,7 @@ c. Jalankan instruksi subtitute user (su dan su -), kemudian keluar dengan perin
 
 Perbedaan dari kedua utilitas tersebut adalah, utilitas `su` berfungsi pengguna tanpa mengubah environment (hanya ganti user). sedangkan `su -` berfungsi untuk mengganti pengguna dan muat environment lengkap dari pengguna baru.
 
+---
 ## 2. Prompt String (PS)  
 a. Jalankan instruksi subtitute user, kemudian keluar dengan perintah exit sebagai berikut:
 
@@ -199,13 +200,123 @@ Muncul pemberitahuan "Permission denied" dikarenakan skrip tersebut tidak memili
 ![Screenshot 2024-09-24 111203](https://github.com/user-attachments/assets/bf844ea3-d875-4bb6-bd1d-2471f44393e4)
 ![Screenshot 2024-09-24 111220](https://github.com/user-attachments/assets/8b2fd6a3-0d18-4919-8f7b-b2807d0cb814)
 
+---
+## 5. Jobs  
+a. Buat shell-script yang melakukan loop dengan nama `pwaktu.sh`,  setiap 10 detik, kemudian menyimpan tanggal dan jam pada file hasil.  
+```
+#!/bin/bash  
+while [ true ]  
+do  
+date >> hasil  
+sleep 10  
+done 
+```
 
+b.  Jalankan sebagai background; kemudian jalankan satu program (utilitas find) di background 
+sebagai berikut :  
+```
+$ jobs  
+$ find / -print > files 2>/dev/null &  
+$ jobs
+```
+c. Jadikan program ke 1 sebagai foreground, tekan ^Z dan kembalikan program tersebut ke 
+background
+```
+$ fg %1  
+$ bg  
+d.  Stop program background dengan utilitas kil  
+$ ps x  
+$ kill [Nomor PID] 
+```
 
+Jawab:
 
+![Screenshot 2024-09-24 111611](https://github.com/user-attachments/assets/aa86cbd7-bd16-4f41-a728-618ce8608068)
 
+a. Pertama-tama gunakan command nano, kemudian isi shell-script dengan command pada soal di atas:
 
+![Screenshot 2024-09-24 111447](https://github.com/user-attachments/assets/681af0be-9bdf-4cda-b900-592ea247329e)
 
+b. Buat shell-script diatas menjadi executable, dangan menggunakan command `chmod +x pwaktu.sh`, kemudian jalankan script di background:
 
+![Screenshot 2024-09-24 204355](https://github.com/user-attachments/assets/b3cac195-1f1d-47f4-a856-07a8690c2a7b)
+
+Lalu jalankan perintah berikut :
+
+- `jobs` dan `find / -print > files 2>/dev/null &`
+![Screenshot 2024-09-24 111842](https://github.com/user-attachments/assets/c2107a4f-1466-4e17-85aa-e02c2eef55d5)
+
+---
+c.  Lalu kita gunakan command berikut :
+
+- `fg %1` dan `bg`
+
+![Screenshot 2024-09-24 111942](https://github.com/user-attachments/assets/422185a1-daad-4277-9f2d-89353eee9f15)
+
+d. Untuk menghentikan program pada background, kita dapat menggunakan command kill. Tapi kita harus mengetahui nomor PID nya terlebih dahulu. Caranya kita bisa menggunakan command ps x.
+
+![Screenshot 2024-09-24 112126](https://github.com/user-attachments/assets/9d4d9337-5765-4940-8b2d-43d2eb06f270)
+![Screenshot 2024-09-24 112140](https://github.com/user-attachments/assets/1418ad13-43a8-494a-907a-142bd0249d30)
+
+- fDisini sudah ditemukan program yang ingin dihentikan, sekarang kita dapat menggunakan command kill = nomor PID nya:
+- 
+![Screenshot 2024-09-24 114020](https://github.com/user-attachments/assets/34258de2-dc76-460f-8fc6-94dca22b2ea1)
+![Screenshot 2024-09-24 114031](https://github.com/user-attachments/assets/7827f011-aa36-4ab1-8bcb-965df350c493)
+
+Setelah melakukan eksekusi command kill ada tulisan Terminated ./pwaktu.sh, yang berarti proses nya sudah di stop.
+
+---
+## 6. History  
+a. Ganti nilai HISTSIZE dari 1000 menjadi 20  
+```
+$ HISTSIZE=20  
+$ h
+```
+b. Gunakan fasilitas history dengan mengedit instruksi baris ke 5 dari instruksi yang terakhir 
+dilakukan  
+```
+$ !-5  
+```
+c. Ulangi instruksi yang terakhir.  Gunakan juga ^P dan ^N untuk bernavigasi pada history bufer 
+```
+$ !!  
+```
+d.  Ulangi instruksi pada history bufer nomor 150  
+```
+$ !150 
+```
+e.  Ulangi instruksi dengan prefix “ls”  
+```
+$ !ls
+```
+
+Jawab:
+
+a. Mengganti nilai HISTSIZE dari 1000 menjadi 20
+
+![Screenshot 2024-09-24 114116](https://github.com/user-attachments/assets/7b2e2c83-a3bd-44d2-8468-23b306d8869c)
+
+---
+b. Menggunakan fasilitas history dengan mengedit instruksi baris ke 5 dari instruksi yang terakhir dilakukan:
+
+![Screenshot 2024-09-24 114156](https://github.com/user-attachments/assets/3c478bf7-e343-4380-941c-52dd03acac12)
+
+---
+c. Ulangi instruksi yang terakhir:
+
+![Screenshot 2024-09-24 114234](https://github.com/user-attachments/assets/e5d93698-ae69-4acf-b780-7017ef4e6d29)
+
+---
+d. Ulangi instruksi pada history bufer nomor 150:
+
+![Screenshot 2024-09-24 114301](https://github.com/user-attachments/assets/0ba1ffd8-b03e-4497-8ca3-ebec73f72e11)
+
+---
+e. Mengulangi instruksi dengan prefix “ls”
+
+![Screenshot 2024-09-24 114330](https://github.com/user-attachments/assets/79d2ecc4-e025-46fd-9b7b-f03077b4758a)
+
+Muncul pemberitahuan "event not found", itu dikarenakan command ls tidak ada didalam 20 daftar history.
 
 
 
