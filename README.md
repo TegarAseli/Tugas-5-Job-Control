@@ -80,6 +80,8 @@ c. Jalankan instruksi subtitute user (su dan su -), kemudian keluar dengan perin
 ![Screenshot 2024-09-24 104359](https://github.com/user-attachments/assets/b0011829-b2b7-497f-ba41-10db10c7476c)
 ![Screenshot 2024-09-24 104448](https://github.com/user-attachments/assets/9d78a635-6070-47dd-9720-53db4dadb4f6)
 
+Perbedaan dari kedua utilitas tersebut adalah, Utilitas `su` Ganti pengguna tanpa mengubah environment (hanya ganti user).
+su - mahasiswa: Ganti pengguna dan muat environment lengkap dari pengguna baru.
 ---
 ## 2. 
 
