@@ -109,17 +109,35 @@ Saya=mahasiswa > PS1=”\w >”
 
 ---
 
-### 3. Logout  
-Edit file .bash_logout, tampilkan pesan dan tahan selama 5 detik, sebelum eksekusi logout  
+## 3. Logout  
+Edit file `.bash_logout`, tampilkan pesan dan tahan selama 5 detik, sebelum eksekusi logout 
+```
 Echo “Terima kasih atas sesi yang diberikan”  
 Sleep 5  
 clear  
+```
 
+![Screenshot 2024-09-24 105237](https://github.com/user-attachments/assets/13bba22a-f853-45dd-96f4-28d07d21b823)
+![Screenshot 2024-09-24 105137](https://github.com/user-attachments/assets/02d49363-4ffe-465c-9735-40ae0883b6f4)
 
+---
 
-
-
-
+## 4. Bash script  
+a.  Buat 3 buah script p1.sh, p2.sh, p3.sh dengan isi masing-masing : 
+```
+p1.sh  
+#! /bin/bash  
+echo “Program p1”  
+ls –l  
+p2.sh  
+#! /bin/bash  
+echo “Program p2”  
+who  
+p3.sh  
+#! /bin/bash  
+echo “Program p3”  
+ps x 
+```
 
 
 
