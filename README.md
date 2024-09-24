@@ -58,19 +58,27 @@ b. Mencantumkan instruksi echo misalnya pada /home/nama user/.bash_profile : ech
 ![Screenshot 2024-09-24 103909](https://github.com/user-attachments/assets/bb20dbce-f718-4b03-adea-d9518a58f1ae)
 
 
-- `.bash_profile`
+- `.bash_login`
 
+![Screenshot 2024-09-24 104056](https://github.com/user-attachments/assets/f1bc9f09-a066-4ed5-a39f-57248223d362)
+![Screenshot 2024-09-24 104037](https://github.com/user-attachments/assets/d39fb38b-bbec-4bee-832f-d6535b58c552)
 
+ 
+ - `.profile` 
 
+![Screenshot 2024-09-24 104247](https://github.com/user-attachments/assets/c426148e-ba8f-46a8-bccd-de3afc754b45)
+![Screenshot 2024-09-24 104235](https://github.com/user-attachments/assets/6ac762a4-cb40-4ee6-aa51-b3261dbca039)
 
+- `.bashrc `
 
+![Screenshot 2024-09-24 104159](https://github.com/user-attachments/assets/5d567b38-1bd1-44b1-9a77-2fa558e2d3cf)
+![Screenshot 2024-09-24 104145](https://github.com/user-attachments/assets/02773fbb-87e7-4978-9bc0-dbfc44b1c67b)
 
+---
+c. Jalankan instruksi subtitute user (su dan su -), kemudian keluar dengan perintah exit.
 
-
-
-
-
-
+![Screenshot 2024-09-24 104359](https://github.com/user-attachments/assets/b0011829-b2b7-497f-ba41-10db10c7476c)
+![Screenshot 2024-09-24 104448](https://github.com/user-attachments/assets/9d78a635-6070-47dd-9720-53db4dadb4f6)
 
 
 
