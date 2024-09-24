@@ -139,21 +139,31 @@ echo “Program p3”
 ps x 
 ```
 
+b.  Jalankan script tersebut sebagai berikut : 
+```
+$  ./p1.sh ; ./p3.sh ; ./p2.sh  
+$  ./p1.sh &  
+$  ./p1.sh $ ./p2.sh & ./p3.sh &  
+$  ( ./p1.sh ; ./p3.sh ) & 
+```
 
+Jawab:
 
+a. Buat 3 buah script p1.sh, p2.sh, p3.sh dengan isi yang telah ditentukan:
 
+- `p1.sh`
+  
+![Screenshot 2024-09-24 105355](https://github.com/user-attachments/assets/17adb255-cc1c-4a2c-8348-0772a269a8c7)
 
+---
+- `p2.sh`
 
+![Screenshot 2024-09-24 105444](https://github.com/user-attachments/assets/cbeb20bd-5008-44be-815a-a678bf2da23a)
+---
+- `p3.sh`
 
-
-
-
-
-
-
-
-
-
+![Screenshot 2024-09-24 105541](https://github.com/user-attachments/assets/349203af-4310-4d33-b460-0f6fbb33fdb1)
+---
 
 
 
