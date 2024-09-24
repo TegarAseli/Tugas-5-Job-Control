@@ -151,6 +151,8 @@ Jawab:
 
 a. Buat 3 buah script p1.sh, p2.sh, p3.sh dengan isi yang telah ditentukan:
 
+![Screenshot 2024-09-24 105555](https://github.com/user-attachments/assets/55f7d01a-a53b-42d9-a938-223b03e2187a)
+---
 - `p1.sh`
   
 ![Screenshot 2024-09-24 105355](https://github.com/user-attachments/assets/17adb255-cc1c-4a2c-8348-0772a269a8c7)
@@ -164,6 +166,44 @@ a. Buat 3 buah script p1.sh, p2.sh, p3.sh dengan isi yang telah ditentukan:
 
 ![Screenshot 2024-09-24 105541](https://github.com/user-attachments/assets/349203af-4310-4d33-b460-0f6fbb33fdb1)
 ---
+
+b.  Jalankan script tersebut menggunakan command pada soal:
+
+- `$  ./p1.sh ; ./p3.sh ; ./p2.sh`
+  
+![Screenshot 2024-09-24 105818](https://github.com/user-attachments/assets/71767644-8c86-4f25-894f-83ff01ce90ee)
+
+Muncul pemberitahuan "Permission denied" dikarenakan skrip tersebut tidak memiliki izin eksekusi. Untuk mengatasinya, gunakan perintah chmod +x pada file skrip untuk memberikan izin eksekusi.
+
+![Screenshot 2024-09-24 105847](https://github.com/user-attachments/assets/30fc0756-260c-4be7-a44f-c5be4c3a74f5)
+![Screenshot 2024-09-24 105859](https://github.com/user-attachments/assets/5bd6f0ea-48cf-4878-8eed-f8046aa11211)
+![Screenshot 2024-09-24 110047](https://github.com/user-attachments/assets/b0757b7a-be41-4bfc-ae48-f10a8c2367bb)
+
+---
+- `$  ./p1.sh & `
+
+![Screenshot 2024-09-24 110307](https://github.com/user-attachments/assets/71f7560d-a3b1-4b1c-b755-8d8564088e4a)
+
+---
+- `$  ./p1.sh $ ./p2.sh & ./p3.sh &`
+
+![Screenshot 2024-09-24 110428](https://github.com/user-attachments/assets/8c32de2d-8bab-48ac-a646-4a1682df6e24)
+![Screenshot 2024-09-24 110444](https://github.com/user-attachments/assets/976cf089-d926-44e6-a7e7-1e4355ae1f84)
+![Screenshot 2024-09-24 110509](https://github.com/user-attachments/assets/20478f2a-7096-4bbe-973c-d6747be7a10a)
+![Screenshot 2024-09-24 110824](https://github.com/user-attachments/assets/a4a86d10-23b3-4694-8651-7ace5c12c27a)
+
+---
+- `$  ( ./p1.sh ; ./p3.sh ) & `
+![Screenshot 2024-09-24 111135](https://github.com/user-attachments/assets/7a5dec30-5320-4892-88d7-0a2c3d2ceb4a)
+![Screenshot 2024-09-24 111148](https://github.com/user-attachments/assets/61e6e377-153f-437b-b972-e284cd6b9570)
+![Screenshot 2024-09-24 111203](https://github.com/user-attachments/assets/bf844ea3-d875-4bb6-bd1d-2471f44393e4)
+![Screenshot 2024-09-24 111220](https://github.com/user-attachments/assets/8b2fd6a3-0d18-4919-8f7b-b2807d0cb814)
+
+
+
+
+
+
 
 
 
