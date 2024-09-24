@@ -47,8 +47,18 @@ a.  Untuk melihat file /etc/profile, kita bisa menggunakan command sudo untuk me
 
 Lalu kita tambahkan `echo “Profile dari /etc/profile”`
 
-![Screenshot 2024-09-24 103701](https://github.com/user-attachments/assets/103e7cdb-ea31-4d44-9a3a-8f7fa991d2ca)
+![Screenshot 2024-09-24 195811](https://github.com/user-attachments/assets/08391c3d-31a8-4eb0-8091-328ab4fbc8e5)
 
+---
+b. Mencantumkan instruksi echo misalnya pada /home/nama user/.bash_profile : echo “Profile dari .bash_profile”.
+
+- `.bash_profile`
+
+![Screenshot 2024-09-24 103929](https://github.com/user-attachments/assets/558768c7-6651-4e73-a379-f22f91a8dbba)
+![Screenshot 2024-09-24 103909](https://github.com/user-attachments/assets/bb20dbce-f718-4b03-adea-d9518a58f1ae)
+
+
+- `.bash_profile`
 
 
 
