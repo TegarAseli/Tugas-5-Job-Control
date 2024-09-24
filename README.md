@@ -80,11 +80,19 @@ c. Jalankan instruksi subtitute user (su dan su -), kemudian keluar dengan perin
 ![Screenshot 2024-09-24 104359](https://github.com/user-attachments/assets/b0011829-b2b7-497f-ba41-10db10c7476c)
 ![Screenshot 2024-09-24 104448](https://github.com/user-attachments/assets/9d78a635-6070-47dd-9720-53db4dadb4f6)
 
-Perbedaan dari kedua utilitas tersebut adalah, Utilitas `su` Ganti pengguna tanpa mengubah environment (hanya ganti user).
-su - mahasiswa: Ganti pengguna dan muat environment lengkap dari pengguna baru.
----
-## 2. 
 
+Perbedaan dari kedua utilitas tersebut adalah, utilitas `su` berfungsi pengguna tanpa mengubah environment (hanya ganti user). sedangkan `su -` berfungsi untuk mengganti pengguna dan muat environment lengkap dari pengguna baru.
+
+## 2. Prompt String (PS)  
+a. Jalankan instruksi subtitute user, kemudian keluar dengan perintah exit sebagai berikut:
+
+Edit file `.bash_profile`, ganti prompt `PS1` dengan `>`. Instruksi export diperlukan dengan 
+parameter nama variable tersebut, agar perubahan variable PS1 dikenal oleh semua shell 
+
+`PS1='> '  `
+export PS1 
+
+![Screenshot 2024-09-24 104619](https://github.com/user-attachments/assets/5e049258-66b6-4c55-a964-acbaafe4d3c3)
 
 
 
