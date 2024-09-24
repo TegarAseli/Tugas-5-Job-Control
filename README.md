@@ -94,6 +94,46 @@ export PS1
 
 ![Screenshot 2024-09-24 104619](https://github.com/user-attachments/assets/5e049258-66b6-4c55-a964-acbaafe4d3c3)
 
+---
+b.  Eksperimen hasil PS1 : 
+```
+$ PS1=“\! > “  
+69 > PS1=”\d > “  
+Mon Sep 23 > PS1=”\t > “  
+10:10:20 > PS1=”Saya=\u > “  
+Saya=mahasiswa > PS1=”\w >”  
+~ > PS1=\h >”  
+```
+
+![Screenshot 2024-09-24 104957](https://github.com/user-attachments/assets/c1949f6b-08db-4522-98b6-c04c8fe7d4a6)
+
+---
+
+### 3. Logout  
+Edit file .bash_logout, tampilkan pesan dan tahan selama 5 detik, sebelum eksekusi logout  
+Echo “Terima kasih atas sesi yang diberikan”  
+Sleep 5  
+clear  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
