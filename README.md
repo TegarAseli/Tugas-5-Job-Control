@@ -41,6 +41,7 @@ kemudian gunakan opsi – sebagai berikut :
 Jelaskan perbedaan kedua utilitas tersebut. 
 
 Jawab:
+
 a.  Untuk melihat file /etc/profile, kita bisa menggunakan command sudo untuk mendapatkan hak akses super user, lalu menggunakan command nano untuk mengedit file tersebut.
 
 ![Screenshot 2024-09-24 103547](https://github.com/user-attachments/assets/b34e4083-3a3b-4e59-a0e6-c94a4a78df12)
@@ -85,6 +86,7 @@ Perbedaan dari kedua utilitas tersebut adalah, utilitas `su` berfungsi pengguna 
 
 ---
 ## 2. Prompt String (PS)  
+
 a. Jalankan instruksi subtitute user, kemudian keluar dengan perintah exit sebagai berikut:
 
 Edit file `.bash_profile`, ganti prompt `PS1` dengan `>`. Instruksi export diperlukan dengan 
@@ -124,6 +126,7 @@ clear
 ---
 
 ## 4. Bash script  
+
 a.  Buat 3 buah script p1.sh, p2.sh, p3.sh dengan isi masing-masing : 
 ```
 p1.sh  
